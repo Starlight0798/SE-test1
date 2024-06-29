@@ -13,11 +13,9 @@ void getnxt(const string &str){
 		if(k == -1 || str[j] == str[k]){
 			++k;
 			++j;
-			nxt[j] = k;
-			/*
+			// nxt[j] = k;
 			if(str[j] == str[k]) nxt[j] = nxt[k];
 			else nxt[j] = k;
-			*/
 		}
 		else k = nxt[k];
 	}

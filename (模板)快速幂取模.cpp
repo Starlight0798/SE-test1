@@ -3,7 +3,7 @@
 #include<iomanip>
 #include<cmath> 
 using namespace std;
-int kuai(int a,int b,int c){
+int quickmod(int a,int b,int c){
 	a%=c;
 	long long int ans=1,base=a;
 	while(b>0){
@@ -18,7 +18,7 @@ int kuai(int a,int b,int c){
 int main(){
 	int a,b,c,ans;
 	cin>>a>>b>>c;
-	ans=kuai(a,b,c);
+	ans=quickmod(a,b,c);
 	if(a==0){
 		cout<<c;
 		return 0;
